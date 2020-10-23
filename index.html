@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Links CSS File -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>JavaScript Events</title>
+
+  </head>
+  <body>
+    <section class="container">
+        <div class="text-center">
+            <h1 class="display-3">This Will Give A Popup Message</h1>
+            <h3 class="pt-4">Click the button and see magic</h3>
+            <button class="btn btn-light" id="helloWorld">Click Here</button>
+        </div>
+
+        <div class="text-center">
+           <h1 class="display-3">This Will Change The Text</h1>
+            <h3 class="pt-4">Click the button and see magic</h3>
+            <button class="btn btn-light" onclick="textChange()">Click Here</button>
+            <h3 id="textChange">Here is a text</h3> 
+        </div>
+
+        <div class="text-center">
+           <h1 class="display-3">This Will Change The Color</h1>
+            <h3 class="pt-4">Click the button and see magic</h3>
+            <button class="btn btn-light" onclick="textColor()">Click Here</button>
+            <h3 id="textColor">Here is a text</h3> 
+        </div>
+
+        <div class="text-center">
+           <h1 class="display-3">This Will Change The Font Size</h1>
+            <h3 class="pt-4">Click the button and see magic</h3>
+            <button class="btn btn-light" onclick="fontSize()">Click Here</button>
+            <h3 id="fontSize">Here is a text</h3> 
+        </div>
+
+        <div class="text-center">
+           <h1 class="display-3">This Will Change The Text</h1>
+            <h3 class="pt-4" id="changeText" onclick="changeText()">Hey Click Me!</h3> 
+        </div>
+
+        <div class="text-center">
+           <h1 class="display-3">This Will Turn Input To Uppercase</h1>
+            <h3 class="pt-4">Enter Your Name Here</h3> 
+            <input type="text" id="textUppercase" onchange="textUppercase()">
+            <h4 class="text-warning">When you left the input box the input will automatically turn into Uppercase</h4>
+        </div>
+
+        <div class="text-center">
+           <h1 class="display-3" onmouseover="style.color='red'" onmouseout="style.color= 'black'">Put Your Mouse On this Text</h1>
+        </div>
+
+        <div class="text-center">
+            <div class="div d-block mx-auto" onmousedown="mDown(this)" onmouseup="mUp(this)">
+                <p>Click Me</p>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <h1 class="display-3">Mouse Over On This Button</h1>
+            <button class="btn-block btn-danger mt-4" id="button">Put the cursor on me!</button>
+            <h3 id="demo"></h3>
+        </div>
+    </section>
+
+    <!-- JS Links -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+<!-- https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add_many2 -->
